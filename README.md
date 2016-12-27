@@ -41,4 +41,4 @@ def my_method(a=1, b=2, c=0):
 - Roman Gorin
 
 # Tests
-`nosetests`
+`python -m unittest`
