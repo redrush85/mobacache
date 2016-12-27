@@ -10,7 +10,7 @@ mobacache is a pythonic interface for creating a cache over redis. It provides s
 
 or to get the latest version
 
-    git clone git://github.com/redrush85/mobacache.git
+    git clone https://github.com/redrush85/mobacache.git
     cd mobacache
     python setup.py install
 
