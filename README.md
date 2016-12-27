@@ -2,7 +2,7 @@
 mobacache is a pythonic interface for creating a cache over redis. It provides simple decorators that can be added to any function to cache its return values.
 
 # Requirements:
-`Python 3.5+`
+`Python 2.7+`
 
 
 # Installation

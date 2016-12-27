@@ -4,10 +4,10 @@ from setuptools import setup
 
 setup(
     name="moba-cache",
-    version="1.1",
+    version="1.2",
     author="Alexander Kuts",
     author_email="redrush85@gmail.com",
-    description="mobacache is a pythonic interface for creating a cache over redis. "
+    description="mobacache is a pythonic interface for creating a cache over redis or other provider. "
                 "It provides simple decorators that can be added to any function to cache its return values. ",
     license="MIT",
     keywords=["redis", "cache", "decorator"],
@@ -30,6 +30,7 @@ setup(
 
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.5',
     ],
 )
