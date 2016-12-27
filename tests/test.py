@@ -1,7 +1,8 @@
 from unittest import TestCase
-from rediscache import CacheBuilder
+from mobacache.base import BaseProvider
+from mobacache import CacheBuilder
 
-class MockRedis:
+class MockRedis(BaseProvider):
     def __init__(self):
         self.data = {}
 
