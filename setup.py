@@ -1,5 +1,4 @@
 #coding=utf-8
-import os
 from setuptools import setup
 
 
@@ -14,7 +13,7 @@ setup(
     keywords=["redis", "cache", "decorator"],
     url="https://github.com/redrush85/redis-cache",
     download_url='https://github.com/redrush85/redis-cache',
-    packages=['redis_cache'],
+    packages=['rediscache'],
     install_requires=["redis>=2.7.1"],
     classifiers=[],
 )
