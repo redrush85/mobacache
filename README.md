@@ -36,7 +36,7 @@ def my_method(a=1, b=2, c=0):
 ```
 
 
-# Contributing
+# Contributors
 - Alexander Kuts
 - Roman Gorin
 
