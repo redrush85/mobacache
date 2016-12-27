@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="moba-cache",
-    version="0.1",
+    version="0.1b1",
     author="Alexander Kuts",
     author_email="redrush85@gmail.com",
     description="mobacache is a pythonic interface for creating a cache over redis. "
@@ -14,6 +14,22 @@ setup(
     url="https://github.com/redrush85/mobacache",
     download_url='https://github.com/redrush85/mobacache',
     packages=['mobacache'],
-    install_requires=["redis>=2.7.1"],
-    classifiers=[],
+    classifiers=[
+        # How mature is this project? Common values are
+        #   3 - Alpha
+        #   4 - Beta
+        #   5 - Production/Stable
+        'Development Status :: 4 - Beta',
+
+        # Indicate who your project is intended for
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Build Tools',
+
+        # Pick your license as you wish (should match "license" above)
+        'License :: OSI Approved :: MIT License',
+
+        # Specify the Python versions you support here. In particular, ensure
+        # that you indicate whether you support Python 2, Python 3 or both.
+        'Programming Language :: Python :: 3.5',
+    ],
 )
