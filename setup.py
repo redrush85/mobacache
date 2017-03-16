@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="moba-cache",
-    version="1.2",
+    version="1.3",
     author="Alexander Kuts",
     author_email="redrush85@gmail.com",
     description="mobacache is a pythonic interface for creating a cache over redis or other provider. "

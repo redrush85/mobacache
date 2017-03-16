@@ -63,6 +63,27 @@ class TestRedisClient(TestCase):
         data = self.cache.get("key1")
         self.assertFalse(data)
 
+    def test_advance_cache(self):
+        @self.cache.advance_cache("variable_a:{a}:variable_b:{b}")
+        def func1(a, b):
+            return a * b
+
+        func1(a=4, b=5)
+
+        data = self.cache.get("variable_a:4:variable_b:5")
+        self.assertEqual(data, 20)
+
+    def test_advance_cache_execption(self):
+        cache = CacheBuilder(conn=MockRedis(), silence_mode=False)
+
+        @cache.advance_cache("variable_a:{a}:variable_b:{c}")
+        def func1(a, b):
+            return a * b
+
+        with self.assertRaises(KeyError):
+            func1(a=4, b=5)
+
+
 
 
 
