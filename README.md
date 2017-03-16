@@ -35,7 +35,7 @@ def my_method(a=1, b=2, c=0):
     return a + b + c
 ```
 
-##Advance cache
+## Advance cache
 ```python
 @cb.advance_cache(key_format="{a}:{b}:var_c={c}", ttl=10)
 def my_method(a=0, b=0, c=0):
