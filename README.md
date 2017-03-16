@@ -35,6 +35,17 @@ def my_method(a=1, b=2, c=0):
     return a + b + c
 ```
 
+##Advance cache
+```python
+@cb.advance_cache(key_format="{a}:{b}:var_c={c}", ttl=10)
+def my_method(a=0, b=0, c=0):
+    return a + b + c
+    
+my_method(1, 2, 3)
+data = cb.get("1:2:var_c=3")
+print(data) # 6
+```
+
 
 # Contributors
 - Alexander Kuts
